@@ -20,14 +20,16 @@ const prodConfig = {
    *
    * You can also use a full path to the remoteEntry.js file if desired.
    *
-   * remotes: [
-   *   ['app1', '//example.com/path/to/app1/remoteEntry.js'],
-   *   ['app2', '//example.com/path/to/app2/remoteEntry.js'],
-   * ]
-   */
+  *remotes: [
+    ['shop', '../../shop'],
+    ['cart', '//example.com/path/to/app2/remoteEntry.js'],
+    ['about', '//example.com/path/to/app2/remoteEntry.js'],
+  ],
+  */
   remotes: [
-    ['shop', '//localhost:4201/'],
-    ['cart', '//localhost:4202/'],
+    ['shop', 'http://localhost:8080/shop'],
+    ['cart', 'http://localhost:8080/cart'],
+    ['about', 'http://localhost:8080/about'],
   ],
 };
 
