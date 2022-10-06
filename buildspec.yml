@@ -13,15 +13,17 @@ phases:
     commands:
       # run build script
       - rm -rf dist/
-      - npx nx build --verbose
-      - cp -rf dist/apps/shell/ public
-      - cp -rf dist/apps/{cart,about,shop} public
+      - npx nx build
+
+  post_build:
+    commands:
+      - mv -rf dist/apps/shell/ ./public
+      - mv -rf dist/apps/{cart,about,shop} ./public
 
 artifacts:
   # include all files required to run application
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
     - public/**/*
-    - package.json
     - appspec.yml
     - scripts/**/*
