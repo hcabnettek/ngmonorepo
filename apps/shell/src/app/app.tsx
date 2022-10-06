@@ -12,7 +12,7 @@ export function App() {
     <React.Suspense fallback={null}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Foam</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
@@ -27,7 +27,7 @@ export function App() {
         </li>
       </ul>
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<h1>Foam</h1>} />
         <Route path="/about" element={<About />} />
 
         <Route path="/shop" element={<Shop />} />
