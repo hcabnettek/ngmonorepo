@@ -19,8 +19,6 @@ phases:
     commands:
       - mv -f dist/apps/shell/ ./public
       - mv -f dist/apps/{cart,about,shop} ./public
-      - echo "== Deployed" >> ver.adoc
-      - date >> ver.adoc
 
 artifacts:
   # include all files required to run application
