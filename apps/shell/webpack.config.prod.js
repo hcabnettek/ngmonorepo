@@ -27,9 +27,9 @@ const prodConfig = {
   ],
   */
   remotes: [
-    ['shop', 'http://localhost:8080/shop'],
-    ['cart', 'http://localhost:8080/cart'],
-    ['about', 'http://localhost:8080/about'],
+    ['shop', 'http://ec2-54-146-248-107.compute-1.amazonaws.com/shop'],
+    ['cart', 'http://ec2-54-146-248-107.compute-1.amazonaws.com/cart'],
+    ['about', 'http://ec2-54-146-248-107.compute-1.amazonaws.com/about'],
   ],
 };
 
