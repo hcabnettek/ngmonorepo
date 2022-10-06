@@ -26,6 +26,7 @@
           "apps/shell/src/styles.scss"
         ],
         "scripts": [],
+        "postcssConfig": "apps/shell/postcss.config.js",
         "webpackConfig": "apps/shell/webpack.config.js"
       },
       "configurations": {
