@@ -17,8 +17,8 @@ phases:
 
   post_build:
     commands:
-      - mv -rf dist/apps/shell/ public
-      - mv -rf dist/apps/{cart,about,shop} public
+      - mv -f dist/apps/shell/ ./public
+      - mv -f dist/apps/{cart,about,shop} ./public
       - echo "== Deployed" >> ver.adoc
       - date >> ver.adoc
 
