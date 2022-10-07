@@ -4,7 +4,7 @@ import styles from './app.module.scss';
 export function App() {
   return (
     <>
-      <h1>About</h1>
+      <h1>CI/CD Test MFE</h1>
       <div />
     </>
   );
