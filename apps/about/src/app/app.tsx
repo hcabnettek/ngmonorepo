@@ -4,7 +4,7 @@ import styles from './app.module.scss';
 export function App() {
   return (
     <>
-      <h1>CI/CD Test MFE</h1>
+      <h1 className="bg-lime-800 p-2 font-mono text-3xl">About</h1>
       <div />
     </>
   );
