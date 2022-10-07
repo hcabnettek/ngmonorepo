@@ -26,8 +26,8 @@
           "apps/about/src/styles.scss"
         ],
         "scripts": [],
-        "webpackConfig": "apps/about/webpack.config.js",
-        "postcssConfig": "apps/about/postcss.config.js"
+        "postcssConfig": "apps/shell/postcss.config.js",
+        "webpackConfig": "apps/about/webpack.config.js"
       },
       "configurations": {
         "development": {

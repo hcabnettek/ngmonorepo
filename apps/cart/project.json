@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/webpack:webpack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
@@ -16,9 +18,15 @@
         "main": "apps/cart/src/main.ts",
         "polyfills": "apps/cart/src/polyfills.ts",
         "tsConfig": "apps/cart/tsconfig.app.json",
-        "assets": ["apps/cart/src/favicon.ico", "apps/cart/src/assets"],
-        "styles": ["apps/cart/src/styles.scss"],
+        "assets": [
+          "apps/cart/src/favicon.ico",
+          "apps/cart/src/assets"
+        ],
+        "styles": [
+          "apps/cart/src/styles.scss"
+        ],
         "scripts": [],
+        "postcssConfig": "apps/shell/postcss.config.js",
         "webpackConfig": "apps/cart/webpack.config.js"
       },
       "configurations": {
@@ -65,14 +73,20 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/cart/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/cart/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/cart"],
+      "outputs": [
+        "coverage/apps/cart"
+      ],
       "options": {
         "jestConfig": "apps/cart/jest.config.ts",
         "passWithNoTests": true

@@ -4,7 +4,7 @@ import styles from './app.module.scss';
 export function App() {
   return (
     <>
-      <h1>Shop</h1>
+      <h1 className="bg-orange-800 p-2 font-mono text-3xl">Shop</h1>
       <div />
     </>
   );
